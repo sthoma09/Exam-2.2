@@ -13,21 +13,29 @@ public class Problem2 {
 
 	}
 	public static void showArray(int[] array) {
-		int index;
 		
 		System.out.printf("[");
-		for(index=0;index<array.length;index++) {
-			if(index!=0) {
+		for(i=0;i<array.length;i++) {
+			System.out.print(array[i]);
+			if(i<array.length - 1) {
 				System.out.printf(",");
 			}
-			System.out.printf("%d", array[index]);
 		}
 		System.out.printf("]\n");
 	}
 	
 	public static int[] interleave(int[] array1, int[] array2) {
+		int index;
+		int[] result = {};
 		
-		return null;
+		for(index = 0; index < array1.length; index++) {
+			result[index++] = array1[index];
+			result[index++] = array2[index];
+		}
+		
+		return result;
+		
+		
 	}
 
 }

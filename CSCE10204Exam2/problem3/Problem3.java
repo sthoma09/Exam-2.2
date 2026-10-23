@@ -2,6 +2,8 @@ package problem3;
 
 public class Problem3 {
 
+	private static final String String = null;
+
 	public static void main(String[] args) {
 		String str = "This is a test";
 		char delim = ' ';
@@ -26,6 +28,11 @@ public class Problem3 {
 	}
 	
 	public static String[] split(String str, char delim) {
+		while(str.nextLine(String)) {
+			tokens = str.split(delim);
+			int spot = Integer.parseInt(str);
+			
+		}
 		
 		return null;
 	}
